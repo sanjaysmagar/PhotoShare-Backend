@@ -1,9 +1,8 @@
 const multer = require("multer");
-const containerClient = require("../config/blob");
+const {containerClient, deleteBlobIfExists} = require("../config/blob");
 const Post = require("../models/Post");
 const Comment = require("../models/Comment");
 const mongoose = require("mongoose");
-const { deleteBlobIfExists } = require("../config/blob"); // optional
 // const axios = require("axios");
 const { Readable } = require("stream");
 
